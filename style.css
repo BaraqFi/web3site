@@ -1,0 +1,154 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    background-color: #222; /* Dark background */
+    color: #eee; /* Light text color */
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+header {
+    background-color: #333; /* Slightly lighter background for toolbar */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 2px solid red;
+    position: fixed; /* Set to fixed positioning */
+    width: 100%; /* Take full width of the viewport */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #444; /* Slightly darker background for sections */
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning */
+    z-index: 1002; /* Ensure it's above the header and the blur effect */
+    background-color: #444; /* Match page color scheme */
+    color: #eee;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 50vw; /* Occupy half the screen width */
+    height: 50vh; /* Occupy half the screen height */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Wallet Panel Styles */
+#walletPanel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444; /* Dark background */
+    color: #fff; /* Light text color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    z-index: 1001; /* Make sure it's on top */
+}
+
+.walletButton {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.walletButton:hover {
+    background-color: #663399;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Button styling for connect button */
+#connect-button {
+    background-color: #800080; /* Purple button */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#connect-button:hover {
+    background-color: #663399; /* Darker purple on hover */
+}
+
+/* Optional: Add a subtle purple glow on hover for links */
+a:hover {
+    color: #800080; 
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baraq's Beginnings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="HUB" href="newpage.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#drops">DROPS</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#partners">PARTNERS</a></li>
+                <li><button id="connect-button">LOGIN</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <!-- Content for home section -->
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <img src="https://amethyst-near-cobra-868.mypinata.cloud/ipfs/QmYeRqEgxB8W4owNZCCXfNCJeRCtwjfPzM8ZnFCHupCCfb" alt="Event Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </section>
+
+    <section id="drops">
+        <h2>Latest Drops</h2>
+        <img src="https://via.placeholder.com/300x200" alt="Drop Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <img src="https://via.placeholder.com/300x200" alt="Team Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </section>
+
+    <section id="partners">
+        <h2>Our Partners</h2>
+        <img src="https://via.placeholder.com/300x200" alt="Partner Image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <!-- Wallet Panel Structure -->
+    <div id="walletPanel">
+        <button id="closeButton">X</button>
+        <button class="walletButton" id="metamaskButton">MetaMask</button>
+        <button class="walletButton" id="walletconnectButton">WalletConnect</button>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="walletModal" class="modal">
+        <div class="modal-content">
+            <h3>Address and Balance</h3>
+            <h4 id="account-info"></h4>
+        </div>
+    </div>
+
+    <!-- Include the generated bundle.js script -->
+    <script src="dist/bundle.js"></script>
+    
+    <!-- Existing scripts -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider/dist/umd/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/@web3modal/ethers5@5"></script>
+    <script src="https://unpkg.com/evm-chains@0.2/dist/umd/index.min.js"></script>
+</body>
+</html>
